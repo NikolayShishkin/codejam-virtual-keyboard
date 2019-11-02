@@ -1,0 +1,31 @@
+.page-wrapper {
+  margin: 0 auto;
+  width: 800px;
+}
+.text-wrapper,
+.keyboard-wrapper {
+  margin-top: 50px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+}
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+}
+.row4 {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+.row5 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
