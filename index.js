@@ -66,7 +66,7 @@ const keyboardRow5 = [
   'Ctrl',
   'Win',
   'Alt',
-  'Space',
+  '',
   'Alt',
   'Ctrl',
   '<',
@@ -108,7 +108,7 @@ const russianLowerCaseRow2 = [
   'Del'
 ];
 const russianLowerCaseRow3 = [
-  'Caps Lock',
+  'CapsLock',
   'ф',
   'ы',
   'в',
@@ -184,7 +184,7 @@ const russianUpperCaseRow2 = [
   'Del'
 ];
 const russianUpperCaseRow3 = [
-  'Caps Lock',
+  'CapsLock',
   'Ф',
   'Ы',
   'В',
@@ -260,7 +260,7 @@ const englishLowerCaseRow2 = [
   'Del'
 ];
 const englishLowerCaseRow3 = [
-  'Caps Lock',
+  'CapsLock',
   'a',
   's',
   'd',
@@ -336,7 +336,7 @@ const englishUpperCaseRow2 = [
   'Del'
 ];
 const englishUpperCaseRow3 = [
-  'Caps Lock',
+  'CapsLock',
   'a',
   's',
   'd',
@@ -483,6 +483,8 @@ document.addEventListener('keydown', event => {
       } else if (key === 'Shift' && altKeyIsPressed) {
         changeLanguage();
         altKeyIsPressed = false;
+      } else if (key = ''){
+        textContainer.innerHTML += ' ';
       }
     }
   });
@@ -514,6 +516,8 @@ document.addEventListener('mousedown', event => {
     } else if (key === 'Shift' && altKeyIsPressed) {
       changeLanguage();
       altKeyIsPressed = false;
+    } else if (key = 'Space'){
+      textContainer.innerHTML += ' ';
     }
   }
 });
